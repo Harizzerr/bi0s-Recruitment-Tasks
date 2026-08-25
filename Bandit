@@ -1,0 +1,349 @@
+Level 0
+ssh bandit0@bandit.labs.overthewire.org -p 2220 (Secure Shell)
+password: bandit0
+
+Level 0-1
+ls (list contents in a directory)
+cat readme (display the contents in a file)
+password: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
+exit
+
+Level 1-2
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+ls -alps (to see all the details of the contents, incl. the hidden files)
+cat ./- (used for dashed files, to recognise and open the contents as a file)
+password: PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+exit 
+
+Level 2-3
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls -alps
+cat "./--spaces in this filename--" (used for files with sapces in the name, to recognize and open the contents as a file)
+password:7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+exit 
+
+Level 3-4
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls -alps
+cd inhere (to change directory)
+ls -alps
+cat ...Hiding-From-You
+password: xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+exit
+
+Level 4-5
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+ls -alps
+cd inhere
+ls -alps
+cat ./-file07
+password: 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
+exit
+
+Level 5-6
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+ls -alps
+cd inhere
+ls -alps
+find -type f -size 1033c (find is used to narrow the list and to find the file by using the parameters given)
+password: pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+exit
+
+Level 6-7
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+ls -alps
+find / -type f -user bandit7 -group bandit6 -size 33c (/ is used to denote the root directory)
+cat /var/lib/dpkg/info/bandit7.password
+password: Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+exit
+
+Level 7-8
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+ls -alps 
+sort data.txt (to list and order the contents in the file)
+sort data.txt | grep millionth (to print the exact line with 'millionth')
+password: VR1ljMayciFxbnUokuQmJFw6QC9VKtub
+exit
+
+Level 8-9
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+ls -alps
+sort data.txt | uniq -c (uniq -c, is used to list how many times each line has repeated)
+password: EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+exit
+
+Level 9-10
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+ls -alps
+strings data.txt | grep "=" (to print the password next to the =)
+password: B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
+exit
+
+Level 10-11
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+ls -alps
+cat data.txt
+base64 -d data.txt (to decrypt the data.txt for the password)
+password: pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
+exit
+
+Level 11-12
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+ls -alps
+cata data.txt
+tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt (to convert the ROT13 cypher to human-readable)
+password: GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
+exit
+
+Level 12-13
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+cat data.txt
+mkdir /tmp/daycare
+cp data.txt /tmp/daycare
+cd /tmp/daycare
+ls 
+xxd -r data.txt > data (to reverse the hex dump)
+file data
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
+
+Level -
+ssh bandit@bandit.labs.overthewire.org -p 2220
+ls -alps
+password: 
+exit
