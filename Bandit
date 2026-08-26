@@ -105,7 +105,6 @@ cp data.txt /tmp/pikerman
 cd /tmp/pikerman
 ls
 xxd -r data.txt > data
-xxd -r data.txt > data
 ls
 rm data.txt
 file data
