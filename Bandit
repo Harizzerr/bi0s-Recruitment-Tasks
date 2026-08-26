@@ -90,7 +90,7 @@ exit
 Level 11-12
 ssh bandit11@bandit.labs.overthewire.org -p 2220
 ls -alps
-cata data.txt
+cat data.txt
 tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt (to convert the ROT13 cypher to human-readable)
 password: GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
 exit
