@@ -170,13 +170,15 @@ password: pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
 exit
 
 Level 15-16
-ssh bandit@bandit.labs.overthewire.org -p 2220
+ssh bandit15@bandit.labs.overthewire.org -p 2220
 ls -alps
-password: 
+echo 'pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7'
+echo "pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7" | openssl s_client -connect localhost:30001 -ign_eof
+password: kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
 exit
 
-Level -
-ssh bandit@bandit.labs.overthewire.org -p 2220
+Level 16-17
+ssh bandit16@bandit.labs.overthewire.org -p 2220
 ls -alps
 password: 
 exit
